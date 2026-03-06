@@ -38,30 +38,65 @@ This project focuses on clean architecture, reusable components, responsive layo
 src/
 │
 ├── assets/
+│   ├── images/
+│   ├── gifs/
+│   └── icons/
+│
+├── api/
+│   ├── axios.ts          # axios instance
+│   ├── auth.api.ts
+│   ├── product.api.ts
+│   ├── order.api.ts
+│   └── user.api.ts
+│
+├── types/
+│   ├── auth.types.ts
+│   ├── product.types.ts
+│   ├── order.types.ts
+│   └── user.types.ts
+│
+├── services/
+│   ├── auth.service.ts
+│   ├── product.service.ts
+│   └── order.service.ts
 │
 ├── components/
-│   ├── Header.jsx
-│   └── Sidebar.jsx
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   └── Sidebar.tsx
+│   │
+│   └── ui/
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       └── Input.tsx
 │
 ├── layouts/
-│   └── AdminLayout.jsx
+│   ├── AdminLayout.tsx
+│   └── AuthLayout.tsx
 │
 ├── pages/
-│   ├── admin/
-│   │   ├── Dashboard.jsx
-│   │   ├── Orders.jsx
-│   │   ├── Products.jsx
-│   │   ├── Settings.jsx
-│   │   ├── Stores.jsx
-│   │   └── Users.jsx
+│   ├── auth/
+│   │   ├── Login.tsx
+│   │   └── Register.tsx
 │   │
-│   ├── Home.jsx
-│   ├── Login.jsx
-│   └── Register.jsx
+│   ├── admin/
+│   │   ├── Dashboard.tsx
+│   │   ├── Stores.tsx
+│   │   ├── Products.tsx
+│   │   ├── Users.tsx
+│   │   ├── Orders.tsx
+│   │   └── Settings.tsx
+│   │
+│   └── Home.tsx
 │
-├── App.jsx
-├── main.jsx
-├── App.css
+├── routes/
+│   └── AppRoutes.tsx
+│
+├── utils/
+│   └── helpers.ts
+│
+├── App.tsx
+├── main.tsx
 └── index.css
 ```
 
